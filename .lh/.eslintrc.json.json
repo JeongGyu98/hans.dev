@@ -1,0 +1,22 @@
+{
+    "sourceFile": ".eslintrc.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1680254349846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680254480630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,24 @@\n {\n+  \"root\": true,\n   \"parser\": \"@typescript-eslint/parser\",\n   \"plugins\": [\"@typescript-eslint\", \"prettier\"],\n   \"parserOptions\": {\n     \"project\": \"./tsconfig.json\"\n   },\n+  \"env\": {\n+    \"node\": true\n+  },\n   \"extends\": [\n   \t\"plugin:@typescript-eslint/recommended\",\n-  \t\"plugin:prettier/recommended\",\n-    \"prettier/@typescript-eslint\"\n-  ]\n+    \"airbnb\",\n+    \"airbnb-typescript\",\n+    \"plugin:prettier/recommended\",\n+    \"next/core-web-vitals\"\n+  ],\n+  \"rules\": {\n+    // 'React' must be in scope when using JSX 에러 해결 (Next.js)\n+  \t\"react/react-in-jsx-scope\": \"off\",\n+    // ts파일에서 tsx구문 허용 (Next.js)\n+    \"react/jsx-filename-extension\": [1, { \"extensions\": [\".ts\", \".tsx\"] }]\n+  }\n }\n"
+                }
+            ],
+            "date": 1680254349846,
+            "name": "Commit-0",
+            "content": "{\n  \"parser\": \"@typescript-eslint/parser\",\n  \"plugins\": [\"@typescript-eslint\", \"prettier\"],\n  \"parserOptions\": {\n    \"project\": \"./tsconfig.json\"\n  },\n  \"extends\": [\n  \t\"plugin:@typescript-eslint/recommended\",\n  \t\"plugin:prettier/recommended\",\n    \"prettier/@typescript-eslint\"\n  ]\n}\n"
+        }
+    ]
+}
